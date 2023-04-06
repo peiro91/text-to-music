@@ -20,6 +20,7 @@ torch                        1.9.1+cu111
 Unidecode                    1.3.4
 samplings                    0.1.7
 transformers                 4.18.0
+music21
 ```
 
 2. Set the input text `input_text.txt` for conditional music generation. 
