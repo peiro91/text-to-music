@@ -6,6 +6,7 @@ import argparse
 from unidecode import unidecode
 from samplings import top_p_sampling, temperature_sampling
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+import music21
 
 def generate_abc(args):
 
@@ -80,8 +81,10 @@ def generate_abc(args):
                 break
 
     timestamp = time.strftime("%a_%d_%b_%Y_%H_%M_%S", time.localtime()) 
-    with open('output_tunes/'+timestamp+'.abc', 'w') as f:
+    namefile = 'output_tunes/'+timestamp+'.abc'
+    with open(namefile, 'w') as f:
         f.write(unidecode(tunes))
+    return namefile
 
 def get_args(parser):
 
@@ -93,8 +96,15 @@ def get_args(parser):
     args = parser.parse_args()
 
     return args
+def play_abc_file(filename):
+    # Carica il file ABC
+    abc = music21.converter.parse(filename)
+    
+    # Riproduce il file ABC
+    abc.show('midi')
     
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     args = get_args(parser)
-    generate_abc(args)
+    filename = generate_abc(args)
+    play_abc_file(filename)
