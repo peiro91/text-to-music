@@ -1,0 +1,24 @@
+X:1
+L:1/8
+M:4/4
+K:D
+ DE | F F2 F E2 ED | F2 F2 E2 z2 | D2 DE F2 ED | A4 AABA | d2 dd B2 AG | A2 A2 F2 z2 | E2 EF D2 DE |
+ D4 ||
+
+X:2
+L:1/8
+M:4/4
+K:D
+ D2 | A2 AB A2 ED | BBB(B B2) dB | A2 AB A2 FD | EEED B,2 D2 | A2 AB A2 ED | BBB(B B2) dB |
+ A2 AB A2 FD | EEED B,2 || (de) | f2 f(f f2) ed | e2 e(e e2) dB | A2 AB A2 FD | E2 ED B,2 (de) |
+ f2 f(f f2) ed | eee(e e2) dB | AA(AB) A2 FD | EEED B,2 |]
+
+X:3
+L:1/8
+Q:1/4=60
+M:4/4
+K:D
+ FG |"D" A2 B3 A |"D" A2"G" d3 B |"D" A3 F"A" E>D |"D" D4 | de | f2 f3 e |"D" e2 d3 A |"G" B3 d"D" d>B |
+"A" A4 | de | f2 f3 e |"D" e2 d3 A |"G" B>c d3 B |"A" A4 | FG |"D" A2 B3 A | A2"G" d3 B |
+"D" A3 F"A" E>D |"D" D4 |]
+

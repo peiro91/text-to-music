@@ -1,0 +1,5 @@
+music21==8.1.0
+samplings==0.1.7
+torch==1.13.1+cu117
+transformers==4.25.1
+Unidecode==1.3.6

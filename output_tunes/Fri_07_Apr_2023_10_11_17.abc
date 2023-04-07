@@ -1,0 +1,23 @@
+X:1
+L:1/8
+M:6/8
+K:D
+ F/E/ | DEF DEF | A2 A A2 F/A/ | B2 B Bcd | e2 e e2 d/c/ | def edc | B2 c/B/ A2 F/G/ | ABA AFD |
+ E3 D2 ||
+
+X:2
+L:1/8
+M:6/8
+K:D
+ D/E/ | FFF FED | EAA A2 A/A/ | BAd cde | dAF G2 A/G/ | FFF FED | EAA A2 A/A/ | BAd cde | d3 D2 :|
+ f/g/ | a>ff fed | ecA A2 d/e/ | f>ef fed | eaa a2 f/g/ | a>ff fed | ecA A2 d/c/ | BAd cde |
+ d3 d2 :|
+
+X:3
+L:1/8
+M:6/8
+K:D
+ A/A/ | F>ED FED | FAA A2 d/e/ | f>ed fed | e2 d B2 d | A>BA/G/ FED | FAA A2 d/e/ | f>ed Bd/B/A |
+ Bdd d2 :: A | f>ef gfg | a>^ga a2 a/a/ | b>ag fed | e2 d B2 d | A>BA/G/ FED | FAA A2 d/e/ |
+ f>ed Bd/B/A | Bdd d2 :|
+
