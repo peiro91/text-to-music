@@ -110,7 +110,7 @@ def generate_abc(args):
 # User defined parameters
 def get_args(parser):
 
-    parser.add_argument('-num_tunes', type=int, default=3, help='the number of independently computed returned tunes')
+    parser.add_argument('-num_tunes', type=int, default=1, help='the number of independently computed returned tunes')
     parser.add_argument('-max_length', type=int, default=1024, help='integer to define the maximum length in tokens of each tune')
     parser.add_argument('-top_p', type=float, default=0.9, help='float to define the tokens that are within the sample operation of text generation')
     parser.add_argument('-temperature', type=float, default=1., help='the temperature of the sampling operation')
@@ -121,7 +121,6 @@ def get_args(parser):
 
 # Function that plays the .abc file
 def play_abc_file(filename):
-
     abc = music21.converter.parse(filename)   
     abc.show('midi')
 
@@ -133,4 +132,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     args = get_args(parser)
     filename = generate_abc(args)
-    play_abc_file(filename)
+    try:
+        play_abc_file(filename)
+    except:
+        print ("Error in playing file. Just search for it in output_tunes folder and copy the text in https://abc.rectanglered.com/ to play it")
