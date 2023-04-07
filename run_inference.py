@@ -99,7 +99,8 @@ def generate_abc(args):
             else:
                 tunes += '\n'
                 break
-
+            
+    #Save file named with timestamp            
     timestamp = time.strftime("%a_%d_%b_%Y_%H_%M_%S", time.localtime()) 
     namefile = 'output_tunes/'+timestamp+'.abc'
     with open(namefile, 'w') as f:
